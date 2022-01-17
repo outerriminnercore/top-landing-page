@@ -1,0 +1,19 @@
+
+img {
+    max-block-size: 3em;
+}
+div {
+    border-style: solid;
+    border-width: 1px;
+    border-color: red;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.header, ul, .intro, .info, .call-blue {
+    display: flex;
+}
+
