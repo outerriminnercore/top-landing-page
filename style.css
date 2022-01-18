@@ -1,19 +1,136 @@
-
-img {
-    max-block-size: 3em;
-}
+/* temporary */
 div {
     border-style: solid;
     border-width: 1px;
     border-color: red;
 }
-
+/* -actual- */
 body {
     display: flex;
     flex-direction: column;
+    margin: 0;
+    min-height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    justify-content: center;
+}
+.wrapper {
+    display: flex;
+    width: 960px;
+    margin-right: auto;
+    margin-left: auto;
+    border-color: turquoise;
+    justify-content: space-between;
+    
 }
 
-.header, ul, .intro, .info, .call-blue {
-    display: flex;
+.header, ul, .intro, .call-blue, .footer {
+    display: flex;    
 }
+
+/* HEADER */
+.header{
+    background-color: #1f2937;
+    color: white;
+    display: flex;
+    width: 100%;
+    }
+.logo {
+    padding: 8px;
+    max-height: 32px;
+}
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 18px;
+    }
+li {
+    margin: 1em;
+}
+/* INTRO */
+.intro {
+    background-color: #1f2937;
+    color: white;
+    min-height: 200px;
+    flex: 1;
+}
+.intro-text {
+    padding: 5%;
+}
+.intro-headline {
+    font-size: 48px;
+    font-weight: 900;
+    margin: 0;
+}
+.intro-subtext {
+    font-size: 18px;
+    margin: 6px 0;
+    max-width: 600px;
+    opacity: 0.8;
+}
+.intro-image {
+ max-height: 150px;
+}
+.button-signup {
+    color: white;
+    border-color: white;
+    background-color: #3882f6;
+    height: 32px;
+    width: auto;
+    padding: 0 12px;
+}
+
+/* INFORMATION */
+.information {
+    text-align: center;
+}
+.wrapper-information {
+    max-width: 960px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.info-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 1em;
+    gap: 1em;
+}
+.info-card {
+    width: 200px;
+    height: 200px;
+}
+.info-img {
+    width: 100%;
+    height: 65%;
+    min-width: 150px;
+    object-fit: cover;
+    /* min-height: 50px;
+    max-height: 300px; */
+}
+
+.img-subtext {
+}
+/*  QUOTE */
+.quote {
+    background-color: #e5e7eb;
+    flex: 1;
+}
+/* CALL / SIGNUP */
+.call-blue {
+    color: white;
+    background-color: #3882f6;
+    margin: 1em 2em;
+    padding: 0.5em 1em;
+}
+/* FOOTER */
+.footer {
+    background-color: #1f2937;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3em;
+    }
 
